@@ -1,4 +1,5 @@
 package com.example.zooApp.configs;
+
 import org.hibernate.boot.MappingException;
 import org.hibernate.dialect.identity.IdentityColumnSupportImpl;
 

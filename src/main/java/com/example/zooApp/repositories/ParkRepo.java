@@ -1,0 +1,13 @@
+package com.example.zooApp.repositories;
+
+import com.example.zooApp.entities.Park;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+
+@Repository
+public interface ParkRepo extends CrudRepository<Park, Integer> {
+    // findAll() SELECT * FROM parks
+    public Park findById(int id);
+}
