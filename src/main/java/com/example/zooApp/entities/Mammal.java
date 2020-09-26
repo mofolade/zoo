@@ -1,21 +1,29 @@
 package com.example.zooApp.entities;
-import java.util.Date;
 
 public abstract class Mammal {
-    private Date dateOfBirth = null;
+    //Behavioral pattern: Template
+    private String placeOfBirth = null;
     private String name = null;
+    private String description = null;
 
 
+
+    public String greet(){
+        //String present = presentYourself(); // always exactly the same
+        //var noise = makeYourSpecialNoise(); // different depending on animal
+        return presentYourself();
+    }
     //A constructor
-    public Mammal(String name, Date dateOfBirth)
+    public Mammal(String name, String placeOfBirth, String description)
     {
-        this.dateOfBirth = dateOfBirth;
+        this.placeOfBirth = placeOfBirth;
         this.name = name;
+        this.description = description;
     }
 
-    public Date getDateOfBirth()
+    public String getPlaceOfBirth()
     {
-        return dateOfBirth;
+        return placeOfBirth;
     }
 
     public String getName()
@@ -23,19 +31,19 @@ public abstract class Mammal {
         return name;
     }
 
-    public Date getAge(Date now)
+    public String getDescription()
     {
-        long time = now.getTime() - dateOfBirth.getTime();
-        Date t = new Date(time);
-        return t;
+        return description;
     }
 
     //This are abstract methods which MUST be
     //implemented by the subclass.
-    public abstract void eat();
+    protected String presentYourself(){
+        return(name + " and I am a "
+                + this.getClass().getSimpleName().toLowerCase() +
+                " ");
+    }
 
-    public abstract void sleep();
-
-    public abstract void walk();
+    protected abstract String makeYourSpecialNoise();
 
 }

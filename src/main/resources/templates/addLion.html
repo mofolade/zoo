@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Add lion</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<h1>Add Lion</h1>
+
+<form action="#" th:action="@{/addLion}" th:object="${lion}" method="post">
+    <p>
+        Name: <input type="text" th:field="*{name}">
+    </p>
+    <p>
+        Place of birth: <input type="text" th:field="*{placeofbirth}">
+    </p>
+    <p>
+        Description: <input type="text" th:field="*{description}">
+    </p>
+    <p>
+        <input type="submit" value="Submit"/> <input type="reset" value="Reset">
+    </p>
+</form>
+
+</body>
+</html>

@@ -1,5 +1,6 @@
 package com.example.zooApp;
 
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -9,6 +10,7 @@ public class ZooAppApplication {
 	public static void main(String[] args) {
 
 		SpringApplication.run(ZooAppApplication.class, args);
+
 	}
 
 }

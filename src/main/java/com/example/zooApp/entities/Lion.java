@@ -1,33 +1,32 @@
 package com.example.zooApp.entities;
 
-import javax.swing.*;
-import java.util.Date;
-
+//@Entity
+//@Table(name = "lion")
 public class Lion extends Mammal{
     //Constructor
-    public Lion(String name, Date dateOfBirth) {
-        super(name, dateOfBirth);
+    public Lion(String name, String placeOfBirth, String description) {
+        super(name, placeOfBirth, description);
+    }
+
+    @Override
+    public String getPlaceOfBirth() {
+        return super.getPlaceOfBirth();
+    }
+
+    @Override
+    public String getName() {
+        return super.getName();
+    }
+
+    @Override
+    public String getDescription() {
+        return super.getDescription();
     }
 
     //Implementing abstract method inherited
     @Override
-    public void eat()
-    {
-        JOptionPane.showMessageDialog(null, "I am a Lion called " + getName() + " eating");
-    }
-
-    //Implementing abstract methods inherited
-    @Override
-    public void sleep()
-    {
-        JOptionPane.showMessageDialog(null, "I am a Lion called " + getName() + " sleeping");
-    }
-
-    //Implementing abstract methods inherited
-    @Override
-    public void walk()
-    {
-        JOptionPane.showMessageDialog(null, "I am a Lion called " + getName() + " walking");
+    public String makeYourSpecialNoise() {
+        return("ROARR!!");
     }
 
 }
