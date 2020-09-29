@@ -1,4 +1,4 @@
-package com.example.zooApp.facadepatterns;
+package com.example.zooApp.entities;
 
 public class BirdKeeper {
     private Birds toucan;

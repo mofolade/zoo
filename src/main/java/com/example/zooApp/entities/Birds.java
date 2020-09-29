@@ -1,4 +1,4 @@
-package com.example.zooApp.facadepatterns;
+package com.example.zooApp.entities;
 
 public interface Birds {
     //Design Patterns - Facade Pattern

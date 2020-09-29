@@ -1,9 +1,5 @@
 package com.example.zooApp.entities;
 
-import com.example.zooApp.facadepatterns.Birds;
-import com.example.zooApp.facadepatterns.Owl;
-import com.example.zooApp.facadepatterns.Toucan;
-
 public class Factory {
     //use getMammal method to get object of type Mammal
     public Birds getBirds(String birdType){

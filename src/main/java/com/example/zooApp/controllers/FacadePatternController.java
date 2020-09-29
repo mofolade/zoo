@@ -1,5 +1,5 @@
 package com.example.zooApp.controllers;
-import com.example.zooApp.facadepatterns.BirdKeeper;
+import com.example.zooApp.entities.BirdKeeper;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
