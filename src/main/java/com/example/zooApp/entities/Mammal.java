@@ -37,7 +37,7 @@ public abstract class Mammal {
     //This are abstract methods which MUST be
     //implemented by the subclass.
     protected String presentYourself(){
-        return(name + " and I am a "
+        return("My name is "+ name + " and I am a "
                 + this.getClass().getSimpleName().toLowerCase() +
                 " ");
     }
