@@ -12,7 +12,7 @@ public class Park {
 
     private String name;
     private String description;
-    private String photo;
+    @Column(name = "imagepath") private String imagepath;
 
     public Park() {}
 
@@ -40,11 +40,11 @@ public class Park {
         this.description = description;
     }
 
-    public String getPhoto() {
-        return photo;
+    public String getImagePath() {
+        return imagepath;
     }
 
-    public void setPhoto(String photo) {
-        this.photo = photo;
+    public void setImagePath(String photo) {
+        this.imagepath = imagepath;
     }
 }

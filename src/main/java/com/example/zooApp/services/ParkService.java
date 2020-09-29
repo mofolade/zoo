@@ -20,4 +20,8 @@ public class ParkService {
     public List<Park> getAllParks(){
         return (List<Park>) parkRepo.findAll();
     }
+
+    public Park createPark(Park park) {
+        return parkRepo.save(park);
+    }
 }

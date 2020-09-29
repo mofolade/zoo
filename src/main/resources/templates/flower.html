@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Spring Boot Thymeleaf Display Image Example</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <section class="row">
+        <div class="col-xs-6 col-sm-3 col-md-4 col-lg-4">
+            <img th:src="${imageUrl}" alt="Image 1" width="300px ">
+        </div>
+        <div class="col-xs-6 col-sm-3 col-md-4 col-lg-4">
+            <img th:src="${imageUrl2}" alt="Image 2" width="300px ">
+        </div>
+    </section>
+</div>
+
+</body>
+</html>

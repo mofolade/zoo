@@ -14,9 +14,7 @@ public class ParkController {
     private ParkService parkService;
 
     @GetMapping("/rest/parks")
-    public List<Park> getAllParks(){
-        return parkService.getAllParks();
-    }
+    public List<Park> getAllParks(){ return parkService.getAllParks(); }
 
     @GetMapping("/rest/parks/{id}")
     public Park getOnePark(@PathVariable int id){

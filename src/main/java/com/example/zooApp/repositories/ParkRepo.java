@@ -7,6 +7,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface ParkRepo extends CrudRepository<Park, Integer> {
-    // findAll() SELECT * FROM parks
-    public Park findById(int id);
+    // findAll() SELECT * FROM park
+    public Park findById(int id); // SELECT * FROM park WHERE id = ?
 }
