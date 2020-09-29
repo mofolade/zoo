@@ -1,12 +1,12 @@
 package com.example.zooApp.repositories;
 
-import com.example.zooApp.entities.Park;
+import com.example.zooApp.entities.Area;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 
 @Repository
-public interface ParkRepo extends CrudRepository<Park, Integer> {
+public interface AreaRepo extends CrudRepository<Area, Integer> {
     // findAll() SELECT * FROM park
-    public Park findById(int id); // SELECT * FROM park WHERE id = ?
+    public Area findById(int id); // SELECT * FROM park WHERE id = ?
 }

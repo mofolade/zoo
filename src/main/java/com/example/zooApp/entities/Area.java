@@ -3,8 +3,8 @@ package com.example.zooApp.entities;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "park")
-public class Park {
+@Table(name = "area")
+public class Area {
 
     @Id // Primary key
     @GeneratedValue(strategy = GenerationType.IDENTITY) //Enables Autoincrement
@@ -14,7 +14,7 @@ public class Park {
     private String description;
     @Column(name = "imagepath") private String imagepath;
 
-    public Park() {}
+    public Area() {}
 
     public int getId() {
         return id;

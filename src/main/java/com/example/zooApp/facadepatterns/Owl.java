@@ -13,4 +13,9 @@ public class Owl implements Birds {
                 "fish, reptiles, amphibians, birds and small mammals";
     }
 
+    @Override
+    public String eatReptiles() {
+        return "Owl eating reptiles.";
+    }
+
 }

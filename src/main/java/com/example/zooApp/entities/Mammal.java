@@ -6,8 +6,6 @@ public abstract class Mammal {
     private String name = null;
     private String description = null;
 
-
-
     public String greet(){
         //String present = presentYourself(); // always exactly the same
         //var noise = makeYourSpecialNoise(); // different depending on animal

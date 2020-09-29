@@ -12,4 +12,9 @@ public class Toucan implements Birds {
         public String eat() {
                 return"Eat: insects, small reptiles, and other bird's eggs.";
         }
+
+        @Override
+        public String eatReptiles() {
+                return "Toucan eating small reptiles.";
+        }
 }
