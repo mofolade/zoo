@@ -39,7 +39,7 @@ public abstract class Mammal {
     protected String presentYourself(){
         return("My name is "+ name + " and I am a "
                 + this.getClass().getSimpleName().toLowerCase() +
-                " ");
+                ". ");
     }
 
     protected abstract String makeYourSpecialNoise();
