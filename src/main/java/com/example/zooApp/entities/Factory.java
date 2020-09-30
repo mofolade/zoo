@@ -7,10 +7,10 @@ public class Factory {
             return null;
         }
         if(birdType.equalsIgnoreCase("Toucan")){
-            return new Toucan();
+            return new Toucan(12, "Tuci", 300);
 
         } else if(birdType.equalsIgnoreCase("Owl")){
-            return new Owl();
+            return new Owl(12, "Ronaldo", 200);
         }
 
         return null;

@@ -5,8 +5,8 @@ public class BirdKeeper {
     private Birds owl;
 
     public BirdKeeper(){
-        toucan = new Toucan();
-        owl = new Owl();
+        toucan = new Toucan(12, "Toucanoo", 300);
+        owl = new Owl(12, "Ronaldo", 200);
     }
     public String toucanPresentation(){
         return toucan.birdSound() +"\n "+toucan.eat();

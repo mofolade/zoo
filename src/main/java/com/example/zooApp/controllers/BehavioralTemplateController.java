@@ -1,7 +1,6 @@
 package com.example.zooApp.controllers;
 
 import com.example.zooApp.entities.Lion;
-import com.example.zooApp.entities.Mammal;
 import com.example.zooApp.entities.Monkey;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.stereotype.Controller;
