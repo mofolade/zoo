@@ -37,7 +37,6 @@ public class Toucan implements Birds {
 
         @Override
         public String birdSound() {
-                //"groomkk," "grunt," "grunnkkt,"
             return "Toucan: groomkk, grunt, grunnkkt";
         }
 

@@ -1,7 +1,7 @@
 package com.example.zooApp.entities;
 
 public class Factory {
-    //use getMammal method to get object of type Mammal
+    //use getBirds method to get object of type Birds
     public Birds getBirds(String birdType){
         if(birdType == null){
             return null;

@@ -1,19 +1,20 @@
 package com.example.zooApp.controllers;
 import com.example.zooApp.entities.BirdKeeper;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 @SpringBootApplication
-@RestController
+@Controller
 public class FacadePatternController {
 
-    @GetMapping("/birds")
-    public static String showBird() {
+    @RequestMapping("/birds")
+    public static String showBird(Model model) {
         BirdKeeper bird=new BirdKeeper();
-
-        return bird.toucanPresentation()+"<br>"+bird.owlPresentation();
-
+        model.addAttribute("birdOwl", bird.owlPresentation());
+        model.addAttribute("birdToucan", bird.toucanPresentation());
+        return "birds";
     }
 
 }
