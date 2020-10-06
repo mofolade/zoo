@@ -12,9 +12,11 @@ public class AreaController {
     @Autowired
     private AreaService areaService;
 
+    //get all areas from db
     @GetMapping("/rest/areas")
     public List<Area> getAllAreas(){ return areaService.getAllAreas(); }
 
+    //get one area from db by id
     @GetMapping("/rest/parks/{id}")
     public Area getOneArea(@PathVariable int id){
         return areaService.getOneArea(id);

@@ -14,9 +14,11 @@ public class BehavioralTemplateController {
 
     @RequestMapping(value = "/mammals")
     public String showMammal(Model model) {
+        // new Lion and Monkey object
         var lion = new Lion("Leo","Africa","Height: 4 ft, Weight: 425 lb, Length: 5 ft - 8 ft");
         var monkey = new Monkey("Goliath","Asia","Height: 3.3 ft, Weight: 79 lb");
 
+        //add object properties to html
         model.addAttribute("lionText", lion.greet());
         model.addAttribute("lionDesc", lion.getDescription());
         model.addAttribute("lionNoise", lion.makeYourSpecialNoise());
@@ -24,10 +26,8 @@ public class BehavioralTemplateController {
         model.addAttribute("monkeyDesc", monkey.getDescription());
         model.addAttribute("monkeyNoise", monkey.makeYourSpecialNoise());
 
+        // html page with data
         return "mammals";
 
-        /*return "<b>"+lion.greet()+"</b>\n\n "+lion.makeYourSpecialNoise()+"<br>"+"<b>"+monkey.greet()+"</b>"+
-                "\n "+monkey.makeYourSpecialNoise()+"<br>";
-*/
     }
 }

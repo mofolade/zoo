@@ -5,9 +5,7 @@ import com.example.zooApp.entities.Birds;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @Controller
@@ -23,9 +21,11 @@ public class FactoryPatternController {
         //get an object of Birds
         Birds birdToucan = factory.getBirds("Toucan");
 
+        //add object properties to html
         model.addAttribute("birdOwl", birdOwl.eatReptiles());
         model.addAttribute("birdToucan", birdToucan.eatReptiles());
 
-        return "birdsfactory"; //bird.eatReptiles() + "<br>" + bird2.eatReptiles();
+        // html page with data
+        return "birdsfactory";
     }
 }

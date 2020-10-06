@@ -5,6 +5,7 @@ package com.example.zooApp.entities;
 public class Lion extends Mammal{
     //Constructor
     public Lion(String name, String placeOfBirth, String description) {
+        //Passing name and placeOfBirth, description to the super class's constructor.
         super(name, placeOfBirth, description);
     }
 

@@ -6,7 +6,7 @@ public class Monkey extends Mammal
     //Constructor
     public Monkey(String name, String placeOfBirth, String description)
     {
-    //Passing name and dataOfBirth to the super class's constructor.
+        //Passing name and placeOfBirth, description to the super class's constructor.
         super(name, placeOfBirth,description);
     }
     @Override

@@ -7,8 +7,6 @@ public abstract class Mammal {
     private String description = null;
 
     public String greet(){
-        //String present = presentYourself(); // always exactly the same
-        //var noise = makeYourSpecialNoise(); // different depending on animal
         return presentYourself();
     }
     //A constructor
@@ -34,14 +32,14 @@ public abstract class Mammal {
         return description;
     }
 
-    //This are abstract methods which MUST be
-    //implemented by the subclass.
     protected String presentYourself(){
         return("My name is "+ name + " and I am a "
                 + this.getClass().getSimpleName().toLowerCase() +
                 ". ");
     }
 
+    //This are abstract methods which MUST be
+    //implemented by the subclass.
     protected abstract String makeYourSpecialNoise();
 
 }

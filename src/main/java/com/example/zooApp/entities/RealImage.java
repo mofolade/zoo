@@ -4,7 +4,7 @@ public class RealImage implements Image{
     private String fileName;
 
     public RealImage(String fileName){
-        this.fileName = fileName; //'../resources/images/orkide.jpg';
+        this.fileName = fileName;
         loadFromClassPath(fileName);
     }
 
